@@ -1,0 +1,24 @@
+{
+  "name": "wordpress-collect",
+  "authors": [
+    "Marnix Harderwijk <marnix.harderwijk@rocketscience.io>"
+  ],
+  "description": "webcomponent for interacting with the Wordpress REST API",
+  "main": "wordpress-collect.html",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "ajax",
+    "wordpress",
+    "api"
+  ],
+  "license": "MIT",
+  "homepage": "https://rocketscience.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
