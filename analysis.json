@@ -142,7 +142,9 @@
           "metadata": {},
           "params": [
             {
-              "name": "baseUrl"
+              "name": "baseUrl",
+              "type": "String",
+              "description": "attribute contains the url of the worpress"
             },
             {
               "name": "wpApiUrl",
