@@ -338,6 +338,108 @@
       },
       "slots": [],
       "tagname": "wordpress-collect"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "demo/index.html",
+      "properties": [
+        {
+          "name": "wpCollectAttrs",
+          "type": "Object",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 76,
+              "column": 16
+            },
+            "end": {
+              "line": 84,
+              "column": 17
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "wpResponse",
+          "type": "Array",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 85,
+              "column": 16
+            },
+            "end": {
+              "line": 87,
+              "column": 17
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        }
+      ],
+      "methods": [],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 73,
+          "column": 20
+        },
+        "end": {
+          "line": 89,
+          "column": 13
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "attributes": [
+        {
+          "name": "wp-collect-attrs",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 76,
+              "column": 16
+            },
+            "end": {
+              "line": 84,
+              "column": 17
+            }
+          },
+          "metadata": {},
+          "type": "Object"
+        },
+        {
+          "name": "wp-response",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 85,
+              "column": 16
+            },
+            "end": {
+              "line": 87,
+              "column": 17
+            }
+          },
+          "metadata": {},
+          "type": "Array"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "wordpress-collect-demo"
     }
   ]
 }
