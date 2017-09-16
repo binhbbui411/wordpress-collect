@@ -2,9 +2,18 @@
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/rocketsciencesolutions/wordpress-collect/elements/wordpress-collect)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
-# 1 \<wordpress-collect\>
+# \<wordpress-collect\>
 
 The `wordpress-collect` element makes it possible to interact with the native [WP REST API](https://developer.wordpress.org/rest-api/reference/).
+
+# Table of Contents
+1.1 [Install the element in your project](#1.1 Install the element in your project)
+1.2 [Usage](#1.2 Usage)
+1.2.1 [1.2.1 base-url - required](#1.2.1 base-url - required)
+1.2.2 [1.2.2 resource - required](#1.2.2 resource - required)
+1.2.3 [1.2.3 id - optional](#1.2.3 id - optional)
+1.2.4 [1.2.4 response - required](#1.2.4 response - required)
+1.2.5 [1.2.5 wp-api-url - optional](#1.2.5 wp-api-url - optional)
 
 ## 1.1 Install the element in your project
 
