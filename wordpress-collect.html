@@ -13,12 +13,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <!--
 The `wordpress-collect` element retrieves wordpress data throught the
 native [WP API](https://developer.wordpress.org/rest-api/reference/)
+```
     <wordpress-collect
       base-url="https://cms.rocketscience.io"
       wp-api-url="wp-json/wp/v2"
       resource="pages"
       id="1"
       response="{{wpPages}}"></wordpress-collect>
+```
 The `base-url` attribute is the Wordpress url you want to retrieve the data from.
 `wp-api-url` attribute is optional, this attribute will be placed after the `base-url`.
 When the `wp-api-url` attribute is not defined it will always default to `wp-json/wp/v2`,
@@ -33,13 +35,22 @@ which is the default WP REST API segment. The `resource` attribute indicates the
   </template>
 
   <script>
+    /**
+     * `wordpress-collect`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
     class WordpressCollect extends Polymer.Element {
       static get is() { return 'wordpress-collect'; }
 
       static get properties() {
         return {
           /**
-           * @attribute
+           * `attribute` - **required**
+           *
            * the base url of the endpoint, i.e. `http://my.wordpress.com`
            */
           baseUrl: {
@@ -47,8 +58,9 @@ which is the default WP REST API segment. The `resource` attribute indicates the
           },
 
           /**
-           * @attribute
-           * the (optional) wp rest api url, defaults to `wp-json/wp/v2`
+           * `attribute` - **optional**
+           *
+           * the wp rest api url (default: `wp-json/wp/v2`)
            */
           wpApiUrl: {
             type: String,
@@ -56,7 +68,8 @@ which is the default WP REST API segment. The `resource` attribute indicates the
           },
 
           /**
-           * @attribute
+           * `attribute` - **required**
+           *
            * the resource part of the endpoint, i.e. pages, would
            * become 'wpurl/pages'
            */
@@ -65,8 +78,9 @@ which is the default WP REST API segment. The `resource` attribute indicates the
           },
 
           /**
-           * @attribute
-           * the (optional) id of the resource to retrieve, i.e. , 
+           * `attribute` - **optional**
+           *
+           * the id of the resource to retrieve, i.e. , 
            * would do a call to retrieve the pages with the provided id (1)
            */
           id: {
@@ -101,15 +115,12 @@ which is the default WP REST API segment. The `resource` attribute indicates the
       }
 
       /**
-       * @observer
-       * when the base-url attribute changes this function
-       * will set the apiUrl and generates the request. It continues to handle
-       * of the promise complete
+       * Defines the endpointUrl by combining the attributes into a valid endpoint url
        *
-       * @param baseUrl | String
-       * @param wpApiUrl | String
-       * @param resource | String
-       * @param id | String (optional)
+       * @param {String} base-url attribute contains the url of the worpress
+       * @param {String} wpApiUrl attribute contains the WP REST API segments
+       * @param {String} resource attribute contains the requested resource
+       * @param {String} id optionally add an id to retrieve the requrested data by id
        */
       _setEndpoint(baseUrl, wpApiUrl, resource, id) {
         if (this._isNotDefined(baseUrl, wpApiUrl, resource)) return;
@@ -121,12 +132,9 @@ which is the default WP REST API segment. The `resource` attribute indicates the
       }
 
       /**
-       * @observer
-       * when the api-base attribute changes this function
-       * will set the apiUrl and generates the request. It continues to handle
-       * of the promise complete
+       * Generates and handles the request
        *
-       * @param endpointUrl | String
+       * @param {String} endpointUrl formed by the _setEndpoint observer method
        */
       _doRequest(endpointUrl) {
         if (this._isNotDefined(endpointUrl)) return;
@@ -146,11 +154,9 @@ which is the default WP REST API segment. The `resource` attribute indicates the
       }
 
       /**
-       * @helper
-       * when the api-base attribute changes this function
-       * will set the apiUrl and generates the request. It continues to handle
-       * of the promise complete
-       * @return Boolean
+       * Checks if arguments are not undefined or empty strings
+       *
+       * @return {Boolean}
        */
       _isNotDefined() {
         let i;
