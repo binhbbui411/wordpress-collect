@@ -28,12 +28,15 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#2"
+    "polymer": "Polymer/polymer#^2.0.0",
+    "iron-ajax": "^2.0.5"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#2",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
-    "test-fixture": "PolymerElements/test-fixture#^3.0.0-rc.1",
-    "web-component-tester": "^6.0.0"
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^2.0.0"
   }
 }
