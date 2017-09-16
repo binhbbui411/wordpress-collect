@@ -11,7 +11,7 @@ specific element:
 jsbin=https://jsbin.com/zeriha/2/edit?html,output
 -->
 
-# Polymer Elements
+# Wordpress Collect
 ## Guide for Contributors
 
 Polymer Elements are built in the open, and the Polymer authors eagerly encourage any and all forms of community contribution. When contributing, please follow these guidelines:
