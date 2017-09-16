@@ -9,11 +9,11 @@ The `wordpress-collect` element makes it possible to interact with the native [W
 ## Table of Contents
 1 [Install the element in your project](#installation)
 2 [Usage](#usage)
-      2.1 [2.1 base-url - required](#base-url)
-      2.2 [2.2 resource - required](#resource)
-      2.3 [2.3 id - optional](#id)
-      2.4 [2.4 response - required](#response)
-      2.5 [2.5 wp-api-url - optional](#wp-api-url)
+      2.1 [Attribute: base-url - required](#base-url)
+      2.2 [Attribute: resource - required](#resource)
+      2.3 [Attribute: id - optional](#id)
+      2.4 [Attribute: response - required](#response)
+      2.5 [Attribute: wp-api-url - optional](#wp-api-url)
 
 ## 1 Installation <a name="installation"></a>
 
