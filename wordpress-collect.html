@@ -7,18 +7,16 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
-<link rel="import" href="../../bower_components/polymer/polymer-element.html">
-<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
 
 <!--
 The `wordpress-collect` element retrieves wordpress data throught the
 native [WP API](https://developer.wordpress.org/rest-api/reference/)
 ```
     <wordpress-collect
-      base-url="https://cms.rocketscience.io"
-      wp-api-url="wp-json/wp/v2"
+      base-url="https://yourwordpressurl.com"
       resource="pages"
-      id="1"
       response="{{wpPages}}"></wordpress-collect>
 ```
 The `base-url` attribute is the Wordpress url you want to retrieve the data from.
