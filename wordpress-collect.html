@@ -41,7 +41,9 @@ which is the default WP REST API segment. The `resource` attribute indicates the
      * @polymer
      * @demo demo/index.html
      */
-    class WordpressCollect extends Polymer.Element {
+    WpCollect = superClass => class WpCollectMixin extends superClass {};
+
+    class WordpressCollect extends WpCollect(Polymer.Element) {
       static get is() { return 'wordpress-collect'; }
 
       static get properties() {
